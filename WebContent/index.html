@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<script>
+		/*
+		up: 38
+		down: 40
+		left: 37
+		right: 39
+		B:66
+		A:65
+		total all events = 38384040373937396665
+		*/
+		var eves = "";
+	    function mouse(e){
+	        alert(e.clientX);
+	    }
+	    function key(e){
+	        eves = eves + e.keyCode;
+//	        alert(e.keyCode + "<br>" + "eves = " + eves);
+	        if(eves!="38384040373937396665"){
+	        } else{
+	        	alert("got it!");
+	        	window.location="http://www.google.com";
+	        }
+	    }
+	</script>
+	</head>
+	<body onkeydown="key(event)">
+		<h1>請在螢幕中輸入 ↑ ↑ ↓ ↓ ← → ← → B A</h1>
+		<div>
+		Keyboard event: 
+		up: 38<br/>
+		down: 40<br/>
+		left: 37<br/>
+		right: 39<br/>
+		B:66<br/>
+		A:65<br/>
+		total all events = 38384040373937396665<br/>
+		</div>
+
+	</body>
+</html>

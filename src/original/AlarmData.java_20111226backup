@@ -1,0 +1,10 @@
+public class AlarmData {
+   public String mo;
+   public String alarm;
+   public String severity;
+   public String description;
+   public String alert;
+   public String accessId;
+   public String neName;
+   public String eventTime;
+}
